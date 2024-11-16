@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nci</groupId>
-	<artifactId>doctorBooking</artifactId>
+	<artifactId>flightBooking</artifactId>
 	<version>0.0.1</version>
 	<name>doctorBooking</name>
 	<description>doctorBooking project for Spring Boot with React</description>
