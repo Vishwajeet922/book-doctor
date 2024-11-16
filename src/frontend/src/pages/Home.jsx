@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { API_MASTER_DATA_URL } from "../utils/contants";
 import { FaUserMd, FaCalendarCheck, FaHospital, FaSearch } from 'react-icons/fa';
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
 
   const fetchMasterData = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/v1/master');
+      const response = await fetch(API_MASTER_DATA_URL);
       const data = await response.json();
       setMasterData(data);
     } catch (error) {
