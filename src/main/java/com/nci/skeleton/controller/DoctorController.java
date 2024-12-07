@@ -24,7 +24,6 @@ public class DoctorController {
 
     @GetMapping("/{doctorId}")
     public ResponseEntity<Doctor> getDoctorDetail(@PathVariable UUID doctorId) {
-        System.out.println("Received doctorId: " + doctorId.toString());
         return new ResponseEntity<>(doctorService.getDoctorDetails(doctorId), HttpStatus.OK);
     }
 

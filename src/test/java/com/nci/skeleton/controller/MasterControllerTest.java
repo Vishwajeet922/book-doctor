@@ -34,10 +34,6 @@ public class MasterControllerTest {
     public void setUp() {
         // Prepare test data
         sampleMasterData = new MasterData();
-        // Populate sampleMasterData with test data as needed
-        // For example:
-        // sampleMasterData.setDoctors(Arrays.asList(new Doctor()));
-        // sampleMasterData.setSpecializations(Arrays.asList("Cardiology"));
     }
 
     @Test

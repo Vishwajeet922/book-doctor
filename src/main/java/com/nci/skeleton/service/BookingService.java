@@ -116,7 +116,7 @@ public class BookingService {
         return response;
     }
 
-    public String sendEmail(User productUser, Booking booking, Doctor doctor) {
+    public void sendEmail(User productUser, Booking booking, Doctor doctor) {
 
         String messageBody = new Gson().toJson(new HashMap<String, String>() {{
             put("recipient", productUser.getEmail());
@@ -141,7 +141,6 @@ public class BookingService {
             put("subject", "Congratulations! Your Doctor Appointment Has Been Booked...");
         }});
 
-        String resp = sqsService.sendSqsMessage(messageBody);
-        return resp;
+        sqsService.sendSqsMessage(messageBody);
     }
 }
