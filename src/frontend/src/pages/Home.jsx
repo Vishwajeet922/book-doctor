@@ -36,7 +36,7 @@ const Home = () => {
       <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
         <div className="container mx-auto px-6">
           <h1 className="text-5xl font-bold mb-4">Your Health, Our Priority</h1>
-          <p className="text-xl mb-8">Book appointments with top specialists in just a few simple clicks</p>
+          <p className="text-xl mb-8">Book appointments with top specialists in just a few clicks</p>
 
           {/* Search Section */}
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-3xl">
