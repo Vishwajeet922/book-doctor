@@ -29,20 +29,4 @@ public class MasterController {
     public ResponseEntity<MasterData> getMasterData() {
         return new ResponseEntity<>(masterDataService.fetchMasterData(), HttpStatus.OK);
     }
-
-    @GetMapping("email")
-    public ResponseEntity<String> testEmail() {
-        Doctor flt=new Doctor();
-        flt.setId(UUID.randomUUID());
-        flt.setName("Mr. Robert Brown");
-        User usr=new User();
-        usr.setFirstname("John");
-        usr.setLastname("Rubbish");
-        usr.setEmail("gawade.achyut96@gmail.com");
-        Booking booking=new Booking();
-        booking.setId(UUID.randomUUID());
-        booking.setDoctorId(flt.getId().toString());
-
-        return new ResponseEntity<>(bookingService.sendEmail(usr,booking, flt), HttpStatus.OK);
-    }
 }

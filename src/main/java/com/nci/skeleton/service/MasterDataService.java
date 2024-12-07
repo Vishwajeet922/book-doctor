@@ -1,7 +1,5 @@
 package com.nci.skeleton.service;
 
-import com.nci.skeleton.model.Airports;
-import com.nci.skeleton.model.Country;
 import com.nci.skeleton.model.MasterData;
 import org.springframework.stereotype.Service;
 
