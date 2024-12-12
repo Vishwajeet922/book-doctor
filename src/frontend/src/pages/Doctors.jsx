@@ -150,7 +150,7 @@ const Doctors = () => {
 
                 <div className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaMoneyBillWave />
-                  <span>${doctor.price} per consultation</span>
+                  <span>E{doctor.price} per consultation</span>
                 </div>
 
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
